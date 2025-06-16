@@ -1,0 +1,59 @@
+{
+  "name": "melina_coaching",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "next dev",
+    "dev": "cross-env INIT_CWD=$PWD next dev",
+    "build": "cross-env INIT_CWD=$PWD next build && cross-env NODE_OPTIONS='--experimental-json-modules'",
+    "serve": "next start",
+    "analyze": "cross-env ANALYZE=true next build",
+    "lint": "next lint --fix --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@headlessui/react": "2.2.0",
+    "@next/bundle-analyzer": "15.2.0",
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/postcss": "^4.0.9",
+    "@tailwindcss/typography": "^0.5.15",
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "esbuild": "0.25.0",
+    "next": "15.2.0",
+    "next-themes": "^0.3.0",
+    "postcss": "^8.5.3",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "tailwindcss": "^4.0.9"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.21.0",
+    "@svgr/webpack": "^8.1.0",
+    "@types/mdx": "^2.0.13",
+    "@types/node": "^22.13.9",
+    "@types/react": "^19.0.10",
+    "@typescript-eslint/eslint-plugin": "^8.26.0",
+    "@typescript-eslint/parser": "^8.26.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.21.0",
+    "eslint-config-next": "15.2.0",
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "globals": "^15.12.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^13.3.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "typescript": "^5.8.2"
+  },
+  "lint-staged": {
+    "*.+(js|jsx|ts|tsx)": [
+      "eslint --fix"
+    ],
+    "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
+      "prettier --write"
+    ]
+  },
+  "packageManager": "yarn@3.6.1"
+}

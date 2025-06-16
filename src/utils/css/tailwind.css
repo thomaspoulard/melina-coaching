@@ -1,0 +1,146 @@
+@import 'tailwindcss';
+@config '../../../tailwind.config.js';
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Core theme configuration */
+@theme {
+  /* Font families */
+  --font-sans: var(--font-helvetica-neue);
+
+  /* Colors */
+  /* Copied from https://tailwindcss.com/docs/theme#default-theme-variable-reference */
+  --color-primary: oklch(75.83% 0.062 209.18); /* Base color */
+  --color-primary-50: oklch(97.22% 0.007 219.56);
+  --color-primary-100: oklch(95.28% 0.013 208.77);
+  --color-primary-200: oklch(90.61% 0.025 209.25);
+  --color-primary-300: oklch(85.2% 0.039 208.76);
+  --color-primary-400: oklch(80.47% 0.051 208.83);
+  --color-primary-500: oklch(75.83% 0.062 209.18); /* Base color */
+  --color-primary-600: oklch(67.03% 0.081 210.3);
+  --color-primary-700: oklch(54.28% 0.066 210.52);
+  --color-primary-800: oklch(41.81% 0.049 209.23);
+  --color-primary-900: oklch(26.93% 0.028 211.1);
+  --color-primary-950: oklch(17.88% 0.014 213.02);
+
+  --color-black-50: #e6e6e6;
+  --color-black-100: #cccccc;
+  --color-black-200: #999999;
+  --color-black-300: #666666;
+  --color-black-400: #333333;
+  --color-black-500: #010101; /* Base color */
+  --color-black-600: #010101;
+  --color-black-700: #010101;
+  --color-black-800: #010101;
+  --color-black-900: #010101;
+  --color-black-950: #010101;
+
+  --color-white-50: #ffffff;
+  --color-white-100: #ffffff;
+  --color-white-200: #ffffff;
+  --color-white-300: #ffffff;
+  --color-white-400: #ffffff;
+  --color-white-500: #ffffff; /* Base color */
+  --color-white-600: #f6f6f6;
+  --color-white-700: #f6f6f6;
+  --color-white-800: #f6f6f6;
+  --color-white-900: #f6f6f6;
+  --color-white-950: #f6f6f6;
+
+  /* Line heights */
+  --line-height-11: 2.75rem;
+  --line-height-12: 3rem;
+  --line-height-13: 3.25rem;
+  --line-height-14: 3.5rem;
+
+  /* Z-index values */
+  --z-60: 60;
+  --z-70: 70;
+  --z-80: 80;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-black-200, currentColor);
+  }
+
+  a,
+  button {
+    outline-color: var(--color-primary-500);
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid;
+    border-radius: var(--radius-sm);
+    outline-color: var(--color-primary-500);
+  }
+}
+
+.task-list-item::before {
+  @apply hidden;
+}
+
+.task-list-item {
+  @apply list-none;
+}
+
+.footnotes {
+  @apply border-black-200 mt-12 border-t pt-8;
+}
+
+.data-footnote-backref {
+  @apply no-underline;
+}
+
+.csl-entry {
+  @apply my-5;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition:
+    background-color 600000s 0s,
+    color 600000s 0s;
+}
+
+.katex-display {
+  overflow: auto hidden;
+}
+
+.content-header-link {
+  opacity: 0;
+  margin-left: -24px;
+  padding-right: 4px;
+}
+
+.content-header:hover .content-header-link,
+.content-header-link:hover {
+  opacity: 1;
+}
+
+.linkicon {
+  display: inline-block;
+  vertical-align: middle;
+}
