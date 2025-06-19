@@ -35,7 +35,7 @@ const MasonryLayout: React.FC = () => {
                 src={'/static/images/' + nutritionContent.imgSubDirectory + image.imgName}
                 alt={image.imgAlt}
                 loading="lazy"
-              /*
+                /*
     {...(image?.width ? { width: image.width } : {})}
     {...(image?.height ? { height: image.height } : {})}
   */

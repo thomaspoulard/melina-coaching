@@ -96,7 +96,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
       <link rel="alternate" type="application/rss+xml" href={`${basePath}/feed.xml`} />
-      <link rel="preload" fetchPriority="high" as="image" href={`${basePath}/static/hero_banner.jpg`} type="image/jpg" />
+      <link
+        rel="preload"
+        fetchPriority="high"
+        as="image"
+        href={`${basePath}/static/hero_banner.jpg`}
+        type="image/jpg"
+      />
       <body className="text-black-950 bg-white antialiased">
         <ThemeProviders>
           <Header />
