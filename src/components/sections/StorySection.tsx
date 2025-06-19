@@ -55,7 +55,7 @@ const StorySection = () => {
               <strong>
                 <em>
                   (perte de poids, prise de masse, tonification, préparation physique, cardio,
-                  perfectionnement technique…)
+                  perfectionnement technique…).
                 </em>
               </strong>
             </p>
