@@ -34,11 +34,10 @@ const MasonryLayout: React.FC = () => {
                 className={`aspect-square rounded-xl object-cover ${i % 2 === 3 ? 'aspect-square' : ''}`}
                 src={'/static/images/' + nutritionContent.imgSubDirectory + image.imgName}
                 alt={image.imgAlt}
-                loading="lazy"
                 /*
-    {...(image?.width ? { width: image.width } : {})}
-    {...(image?.height ? { height: image.height } : {})}
-  */
+      {...(image?.width ? { width: image.width } : {})}
+      {...(image?.height ? { height: image.height } : {})}
+    */
               />
             )
           })}
