@@ -7,14 +7,18 @@ import { useEffect, useState } from 'react'
 import { Button } from '@headlessui/react'
 import siteMetadata from '@/data/siteMetadata'
 
-const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false)
+type Props = {
+  visible?: boolean
+}
+
+const Header = ({ visible }: Props) => {
+  const [isScrolled, setIsScrolled] = useState(visible)
 
   useEffect(() => {
     let ticking = false
 
     const handleScroll = () => {
-      if (!ticking) {
+      if (!ticking && !visible) {
         requestAnimationFrame(() => {
           setIsScrolled(window.scrollY > 0)
           ticking = false

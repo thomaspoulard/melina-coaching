@@ -7,6 +7,7 @@ export interface INextImageElement {
 }
 
 export interface ICoachingActivity {
+  key: string
   title: string
   introduction: string
   shortDescription?: string

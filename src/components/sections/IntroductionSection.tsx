@@ -25,7 +25,6 @@ const IntroductionSection: React.FC = () => {
           src={'/static/images/' + introductionContent.mainImgName}
           className="mx-auto h-auto min-h-[480px] w-[74vw] rounded-3xl object-cover object-top sm:max-h-[660px] md:h-full md:w-[35vw] lg:w-[35%]"
           alt={introductionContent.mainImgAlt}
-          loading="lazy"
         />
       </div>
 
@@ -33,7 +32,7 @@ const IntroductionSection: React.FC = () => {
         {introductionContent.activities.map((activity, i) => {
           return (
             <h2 className="block sm:hidden" key={i}>
-              <em>{activity}</em>
+              <em>{activity.title}</em>
             </h2>
           )
         })}

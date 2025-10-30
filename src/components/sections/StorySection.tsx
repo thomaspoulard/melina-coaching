@@ -55,7 +55,7 @@ const StorySection = () => {
               <strong>
                 <em>
                   (perte de poids, prise de masse, tonification, préparation physique, cardio,
-                  perfectionnement technique…).
+                  perfectionnement technique…)
                 </em>
               </strong>
             </p>
@@ -65,7 +65,6 @@ const StorySection = () => {
           src={'/static/images/shooting_belt_bw.jpg'}
           className="mx-auto h-auto w-[74vw] rounded-3xl object-center md:w-[50vw] lg:w-[35wv]"
           alt="Championne"
-          loading="lazy"
         />
       </div>
     </section>
