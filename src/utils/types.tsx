@@ -1,21 +1,23 @@
 export interface INextImageElement {
   imgName: string
   imgAlt: string
-  order: number
+  order?: number
   width?: number
   height?: number
 }
 
 export interface ICoachingActivity {
-  key: string
+  slug: string
   title: string
   introduction: string
   shortDescription?: string
   description: string
+  images?: Array<INextImageElement>
 }
 
 export interface ICoachingSection {
   imgName: string
   imgAlt: string
+  hasImage: boolean,
   activities: Array<ICoachingActivity>
 }

@@ -6,9 +6,10 @@ import { ICoachingSection } from 'src/utils/types'
 interface IProps {
   isReversed?: boolean
   coachingSection: ICoachingSection | undefined
+  hasImage: boolean
 }
 
-const HomeCoachingCard: React.FC<IProps> = ({ isReversed = false, coachingSection }) => {
+const HomeCoachingCard: React.FC<IProps> = ({ isReversed = false, coachingSection, hasImage = true }) => {
   return (
     <div
       className={`flex flex-col gap-8 sm:items-center lg:gap-16 ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'}`}
@@ -31,11 +32,13 @@ const HomeCoachingCard: React.FC<IProps> = ({ isReversed = false, coachingSectio
             )
           })}
       </div>
-      <img
-        src={'/static/images/coaching/' + coachingSection?.imgName}
-        className="mx-auto h-auto min-h-[480px] w-[74vw] rounded-3xl object-cover sm:max-h-[660px] md:h-full md:w-[35vw] lg:w-[25vw]"
-        alt={coachingSection?.imgAlt}
-      />
+      {
+        hasImage && <img
+          src={'/static/images/coaching/' + coachingSection?.imgName}
+          className="mx-auto h-auto min-h-[480px] w-[74vw] rounded-3xl object-cover sm:max-h-[660px] md:h-full md:w-[35vw] lg:w-[25vw]"
+          alt={coachingSection?.imgAlt}
+        />
+      }
     </div>
   )
 }

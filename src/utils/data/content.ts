@@ -107,22 +107,47 @@ export const coachingActivities: Array<ICoachingSection> = [
   {
     activities: [
       {
-        key: 'kick-boxing',
+        slug: 'kick-boxing',
         title: 'Kick-Boxing',
         introduction:
-          'Le kickboxing est ma discipline coup de cœur, débutant ou expert, je m’adapterai à ton niveau pour t’offrir la meilleure progression possible et t’aider à atteindre ton plein potentiel.',
+          'Le kick-boxing est ma discipline coup de cœur, débutant ou expert, je m’adapterai à ton niveau pour t’offrir la meilleure progression possible et t’aider à atteindre ton plein potentiel.',
+        shortDescription:
+          'Le travail aux paos te permettra de parfaire ta progression en améliorant tes techniques de frappe, tes déplacements mais aussi ta vitesse, ta précision et ton mental. ',
         description:
-          'Le travail aux paos te permettra de parfaire ta progression en améliorant tes techniques de frappe, tes déplacements mais aussi ta vitesse, ta précision et ton mental.',
+          'J’organise aussi régulièrement des stages sur un ou plusieurs jours durant lesquels je vous propose des sessions intensives en groupe pour vous challenger et booster votre progression : technico-tactique, préparation physique, cardio, sparring vous serez portés par le dynamisme du groupe et stimulé par la variété des exercices. N’hésitez pas à me contacter pour plus d’informations, je vous communiquerai les futures dates.',
+        images: [
+          {
+            imgName: 'kick-boxing-group-1.jpg',
+            imgAlt:
+              'Deux personnes en plein échange de coups lors d’un entraînement de kick-boxing, avec des gants et protections',
+          },
+          {
+            imgName: 'kick-boxing-group-2.jpg',
+            imgAlt:
+              'Groupe de pratiquants de kick-boxing posant ensemble en garde sur un tatami dans une salle de sport',
+          },
+          {
+            imgName: 'kick-boxing-group-3.jpg',
+            imgAlt:
+              'Participants à un entraînement de kick-boxing en train de boxer en duo, équipés de gants',
+          },
+          {
+            imgName: 'kick-boxing-group-4.jpg',
+            imgAlt:
+              "Scène dynamique d'entraînement de kick-boxing : une femme esquive un coup lors d’un sparring",
+          },
+        ],
       },
     ],
     imgName: 'kick-boxing.jpg',
     imgAlt:
       'Femme athlétique en tenue de kick-boxing, gantée, regard confiant, sous un éclairage contrasté.',
+    hasImage: false,
   },
   {
     activities: [
       {
-        key: 'stretching',
+        slug: 'stretching',
         title: 'Le stretching',
         introduction:
           'Cette discipline nous invite à la relaxation. Très efficace pour apaiser et relâcher les tensions, elle permet d’évacuer le stress et de prendre un moment pour soi. En plus d’améliorer votre souplesse et votre mobilité les étirements permettent d’améliorer la posture et d’affiner la silhouette en allongeant les muscles.',
@@ -135,11 +160,12 @@ export const coachingActivities: Array<ICoachingSection> = [
     imgName: 'stretching.jpg',
     imgAlt:
       'Personne effectuant un étirement et du stretching dans la neige, avec une vue sur des montagnes enneigées.',
+    hasImage: true,
   },
   {
     activities: [
       {
-        key: 'renforcement-musculaire-doux',
+        slug: 'renforcement-musculaire-doux',
         title: 'Renforcement musculaire doux',
         introduction:
           'Je vous aide à retrouver ou à maintenir une activité sportive avec des séances de sport douces mais efficaces avec une méthode inspirée de la musculation, du Pilates et du stretching.',
@@ -150,11 +176,12 @@ export const coachingActivities: Array<ICoachingSection> = [
     imgName: 'pilates.jpg',
     imgAlt:
       'Femme en tenue de sport assise sur un tabouret, en posture de relaxation, éclairage tamisé.',
+    hasImage: true,
   },
   {
     activities: [
       {
-        key: 'preparation-physique',
+        slug: 'preparation-physique',
         title: 'Préparation physique',
         introduction:
           'La préparation physique est indispensable pour performer dans n’importe quel sport pour développer les qualités physiques et éviter les blessures.',
@@ -164,6 +191,7 @@ export const coachingActivities: Array<ICoachingSection> = [
     ],
     imgName: 'musculation-cross-fit.jpg',
     imgAlt: 'Haltères et poids de musculation sur un tapis de gym, en noir et blanc.',
+    hasImage: true,
   },
 ]
 
