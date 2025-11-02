@@ -11,16 +11,16 @@ const HomepageCardsSection = () => {
   const router = useRouter()
 
   return (
-    <section className="-mt-4 flex flex-col justify-center gap-8 sm:-mt-0 lg:gap-20">
+    <section className='-mt-4 flex flex-col justify-center gap-8 sm:-mt-0 lg:gap-20'>
       <div
         className={
           activities.length <= 3
-            ? "grid grid-cols-1 lg:grid-cols-3 gap-2 sm:gap-6"
-            : "grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-6"
+            ? 'grid grid-cols-1 lg:grid-cols-3 gap-2 sm:gap-6'
+            : 'grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-6'
         }
       >
         {introductionContent.activities.map((activity, i) => {
-          return <button key={i} onClick={() => router.push(activity.path)} className="h-full cursor-pointer z_shadow-primary group">
+          return <button key={i} onClick={() => router.push(activity.path)} className='h-full cursor-pointer z_shadow-primary group'>
             <div className='relative h-full'>
               <ImageCard src={imgDirectoryName + activity.imgName} alt={activity.imgAlt} />
               <ArrowOutwardSharpIcon className='text-white group-hover:text-primary absolute right-3 top-3' />
