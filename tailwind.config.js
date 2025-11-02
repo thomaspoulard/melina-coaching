@@ -8,10 +8,10 @@ module.exports = {
       },
       keyframes: {
         blink: {
-          '0%, 100%': { opacity: 1 },
-          '25%': { opacity: 0 },
-          '50%': { opacity: 0.7 },
-          '75%': { opacity: 0.3 },
+          '0%, 100%': { opacity: '1' },
+          '25%': { opacity: '0' },
+          '50%': { opacity: '0.7' },
+          '75%': { opacity: '0.3' },
         },
       },
       animation: {
