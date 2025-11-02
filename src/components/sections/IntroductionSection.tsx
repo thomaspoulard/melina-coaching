@@ -10,23 +10,14 @@ const IntroductionSection: React.FC = () => {
         {introductionContent.quote}
       </span>
 
-      <div className="flex flex-col justify-between gap-6 md:flex-row">
-        <div className="mx-auto self-center md:w-1/2">
-          <h2>{introductionContent.title}</h2>
-          <strong>
-            <h3 className="-mt-6">{introductionContent.subtitle}</h3>
-          </strong>
-          <p className="text-justify">
-            {introductionContent.content}
-            <br />
-          </p>
-        </div>
-        <img
-          src={'/static/images/' + introductionContent.mainImgName}
-          className="mx-auto h-auto min-h-[480px] w-[74vw] rounded-3xl object-cover object-top sm:max-h-[660px] md:h-full md:w-[35vw] lg:w-[35%]"
-          alt={introductionContent.mainImgAlt}
-        />
-      </div>
+      <h2>{introductionContent.title}</h2>
+      <strong>
+        <h3 className="-mt-6">{introductionContent.subtitle}</h3>
+      </strong>
+      <p className="text-justify">
+        {introductionContent.content}
+        <br />
+      </p>
 
       <div className="self-center pt-12 pb-6 text-center leading-9 italic sm:leading-14 lg:gap-24 lg:pt-24 lg:pb-18">
         {introductionContent.activities.map((activity, i) => {
