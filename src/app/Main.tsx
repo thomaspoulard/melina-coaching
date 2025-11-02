@@ -1,17 +1,13 @@
-import CoachingSection from '@/components/sections/CoachingSection'
-import StorySection from '@/components/sections/StorySection'
+import HomepageCardsSection from '@/components/sections/HomepageCardsSection'
 import InstagramSection from '@/components/sections/InstagramSection'
 import IntroductionSection from '@/components/sections/IntroductionSection'
-import MasonryLayout from '@/components/sections/MasonryLayout'
 
 export default function Home() {
   return (
-    <section className="flex flex-col gap-12 py-12 lg:gap-24 lg:py-24">
+    <section className="flex flex-col gap-12 py-12 lg:gap-24 lg:pt-24 lg:pb-12">
       <IntroductionSection />
-      <MasonryLayout />
-      <CoachingSection />
+      <HomepageCardsSection />
       <InstagramSection />
-      <StorySection />
     </section>
   )
 }

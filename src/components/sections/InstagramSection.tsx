@@ -14,7 +14,6 @@ const InstagramSection: React.FC<IProps> = ({ classNames }) => {
             className="h-40 w-full scale-300 object-center sm:h-48 sm:scale-100 sm:object-cover"
             src="/static/images/instagram_banner.svg"
             alt="Mélina Coaching Compte Instagram"
-            loading="lazy"
           />
         </div>
         <div className="bg-primary-200 px-auto -mt-1 mb-6 flex items-center justify-center overflow-hidden rounded-b-2xl sm:mb-12">

@@ -1,14 +1,29 @@
 /* eslint-disable @next/next/no-img-element */
+import { achievement } from '@/data/content'
 
 const StorySection = () => {
   return (
     <section>
       <div
-        className={`flex grid-cols-1 grid-rows-2 flex-col gap-8 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-16`}
+        className={`flex grid-cols-1 grid-rows-2 flex-col gap-4 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-16`}
       >
-        <div className="row-start-1 flex flex-col justify-center gap-4 text-justify sm:items-center sm:gap-2 md:items-start lg:col-start-2">
+        <div className="row-start-1 flex flex-col text-justify sm:gap-2 md:items-start lg:col-start-2">
+
+          <ul className='text-primary'>
+            <li>
+              <h3 className="leading-6">{achievement.achievement_1}</h3>
+            </li>
+            <li>
+              <h3 className="mt-4 leading-6 sm:mt-2">{achievement.achievement_2}</h3>
+            </li>
+            <li>
+              <h3 className="mt-4 mb-2 md:mb-6 leading-6 sm:mt-2">{achievement.achievement_3}</h3>
+            </li>
+          </ul>
+
           <h2>Mon histoire</h2>
-          <div className="-mt-8 flex flex-col gap-4 sm:-mt-0">
+
+          <div className="flex flex-col gap-4">
             <p>
               Passionnée par le sport en tout genre, j’ai pratiqué de nombreuses années l’équitation
               avant de découvrir la boxe au début de mes années lycées. Ce fut un réel coup de cœur,
@@ -55,7 +70,7 @@ const StorySection = () => {
               <strong>
                 <em>
                   (perte de poids, prise de masse, tonification, préparation physique, cardio,
-                  perfectionnement technique…).
+                  perfectionnement technique…)
                 </em>
               </strong>
             </p>
@@ -65,7 +80,6 @@ const StorySection = () => {
           src={'/static/images/shooting_belt_bw.jpg'}
           className="mx-auto h-auto w-[74vw] rounded-3xl object-center md:w-[50vw] lg:w-[35wv]"
           alt="Championne"
-          loading="lazy"
         />
       </div>
     </section>

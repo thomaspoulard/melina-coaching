@@ -8,14 +8,40 @@ export const introductionContent = {
   title: 'Qui suis-je ?',
   subtitle: 'Mélina RANTIN,',
   content:
-    'Coach sportive diplômée d’une Licence STAPS et d’une formation en nutrition du sport je vous propose des coaching sportifs adaptés à votre profil dans différentes disciplines. Je propose également des "programmes nutrition" pour vous aider à perdre du poids, à effectuer une sèche ou une prise de masse saine.',
+    'Coach sportive diplômée d’une Licence STAPS et d’une formation en nutrition du sport je vous aide à atteindre vos objectifs avec discipline et bienveillance.',
   mainImgName: 'introduction_picture.jpg',
   mainImgAlt: 'Shooting',
-  activities: ['Kick-Boxing', 'CrossFit', 'Musculation', 'Pilates', 'Stretching'],
-  activities_all: 'Kick-Boxing - CrossFit - Musculation - Pilates - Stretching',
-  achievement_1: '7× Championne de France de Kick-Boxing',
-  achievement_2: 'Médaillée de Bronze des Championnats d’Europe Wako 2024',
-  achievement_3: 'Membre de l’équipe de France de Kick-Boxing',
+  activities: [
+    {
+      title: 'Kick-Boxing',
+      path: '/kick-boxing',
+      imgName: 'kick-boxing.jpg',
+      imgAlt:
+        'Sportive en gants de boxe levant un genou en garde de kick-boxing, éclairage coloré en studio',
+    },
+    {
+      title: 'Préparation physique',
+      path: '/preparation-physique',
+      imgName: 'preparation-physique.jpg',
+      imgAlt:
+        'Athlète faisant des pompes mains sur haltères dans une salle de sport, cadrage rapproché au sol',
+    },
+    {
+      title: 'Activités douces',
+      path: '/activites-douces',
+      imgName: 'activites-douces.jpg',
+      imgAlt:
+        'Femme assise sur un tabouret en tenue de sport, profil dans une lumière douce sur fond sombre',
+    },
+    {
+      title: 'Transformation physique',
+      path: /*'/transformation-physique'*/ '#', //TODO: disabled page "transformation-physique"
+      imgName: 'transformation-physique.jpg',
+      imgAlt:
+        'Boxeuse souriante en mouvement derrière une corde de ring, plan serré sur l’épaule et le buste',
+    },
+  ],
+  activities_all: 'Kick-Boxing - Préparation physique - Activités douces - Transformation physique',
   achievement_images: [
     {
       imgName: 'combat_1',
@@ -81,71 +107,134 @@ export const coachingActivities: Array<ICoachingSection> = [
   {
     activities: [
       {
+        slug: 'kick-boxing',
         title: 'Kick-Boxing',
         introduction:
-          'Je vous propose des cours privés aux PAOS toute l’année et également des cours collectifs en extérieur le printemps et l’été.',
+          'Le kick-boxing est ma discipline coup de cœur, débutant ou expert, je m’adapterai à ton niveau pour t’offrir la meilleure progression possible et t’aider à atteindre ton plein potentiel.',
         shortDescription:
-          'L’entraînement aux PAOS est un entraînement complet qui vous permettra de vous défouler mais aussi de parfaire votre technique que vous soyez débutant ou expert.',
+          'Le travail aux paos te permettra de parfaire ta progression en améliorant tes techniques de frappe, tes déplacements mais aussi ta vitesse, ta précision et ton mental. ',
         description:
-          'Grâce à cet entraînement vous allez améliorer votre vitesse de réaction, gagner en endurance grâce à la répétition des coups et progresser techniquement en apprenant différents enchaînements. C’est aussi un moyen efficace de brûler un grand nombre de calories et de vous dépasser physiquement en repoussant vos limites.',
+          'J’organise aussi régulièrement des stages sur un ou plusieurs jours durant lesquels je vous propose des sessions intensives en groupe pour vous challenger et booster votre progression : technico-tactique, préparation physique, cardio, sparring vous serez portés par le dynamisme du groupe et stimulé par la variété des exercices. N’hésitez pas à me contacter pour plus d’informations, je vous communiquerai les futures dates.',
+        images: [
+          {
+            imgName: 'kick-boxing-group-1.jpg',
+            imgAlt:
+              'Deux personnes en plein échange de coups lors d’un entraînement de kick-boxing, avec des gants et protections',
+          },
+          {
+            imgName: 'kick-boxing-group-2.jpg',
+            imgAlt:
+              'Groupe de pratiquants de kick-boxing posant ensemble en garde sur un tatami dans une salle de sport',
+          },
+          {
+            imgName: 'kick-boxing-group-3.jpg',
+            imgAlt:
+              'Participants à un entraînement de kick-boxing en train de boxer en duo, équipés de gants',
+          },
+          {
+            imgName: 'kick-boxing-group-4.jpg',
+            imgAlt:
+              "Scène dynamique d'entraînement de kick-boxing : une femme esquive un coup lors d’un sparring",
+          },
+        ],
       },
     ],
     imgName: 'kick-boxing.jpg',
     imgAlt:
       'Femme athlétique en tenue de kick-boxing, gantée, regard confiant, sous un éclairage contrasté.',
+    hasImage: false,
   },
   {
     activities: [
       {
-        title: 'CrossFit',
+        slug: 'stretching',
+        title: 'Le stretching',
         introduction:
-          'Je vous propose des cours privés en salle toute l’année et également des cours collectifs en extérieur de printemps à mi-septembre pour profiter du soleil et vous entraîner à petits prix.',
+          'Cette discipline nous invite à la relaxation. Très efficace pour apaiser et relâcher les tensions, elle permet d’évacuer le stress et de prendre un moment pour soi. En plus d’améliorer votre souplesse et votre mobilité les étirements permettent d’améliorer la posture et d’affiner la silhouette en allongeant les muscles.',
         shortDescription:
-          'Forte de sa diversité, cette discipline alliant gymnastique, cardio et haltérophilie va vous permettre de grandement améliorer votre condition physique en gagnant en force, mobilité, endurance, vitesse, coordination et précision.',
+          'Vous pouvez également intégrer les étirements à des semaines d’entraînements bien remplies pour contribuer à améliorer vos performances en bénéficiant de leurs bienfaits. Au fil des semaines vous observerez un gain d’amplitude sur certains mouvements sportifs (high kick plus fluide, plus d’aisance au squat…), ainsi qu’une réduction des douleurs post-entrainement.',
         description:
-          'Le Cross Fit est une discipline idéale pour relever des défis, perdre du poids et conserver sa masse musculaire, faire des entraînements variés et ne jamais s’ennuyer.',
-      },
-      {
-        title: 'Musculation',
-        introduction:
-          'Je vous propose un programme d’entraînement sur mesure en raccord avec vos objectifs et vous assure un suivi au fil des séances.',
-        description:
-          'La musculation est le sport idéal pour sculpter votre corps tout en améliorant vos qualités physiques. Au fil des séances vous allez obtenir un corps plus gainé et vos muscles vont se renforcer. Si vous pratiquez un autre sport, la musculation se positionne comme un allié de choix pour vous aider dans votre quête de performance car avec un programme adapté, elle participe grandement à augmenter la force, l’explosivité, la vitesse, la puissance et l’endurance.',
-        shortDescription: '',
-      },
-    ],
-    imgName: 'musculation-cross-fit.jpg',
-    imgAlt: 'Haltères et poids de musculation sur un tapis de gym, en noir et blanc.',
-  },
-  {
-    activities: [
-      {
-        title: 'Pilates',
-        introduction:
-          'Je vous propose des cours de Pilates (individuel ou en petit groupe, en intérieur et en extérieur).',
-        shortDescription:
-          'Le Pilates est une forme de gymnastique qui a été inventée par Joseph Pilates avec l’objectif de rendre le corps « fort comme une colonne grecque et souple comme un chat ». C’est une discipline douce qui saura vous apporter de nombreux bienfaits. Vos muscles profonds seront activés et renforcés durant les séances, ce qui vous permettra notamment d’améliorer votre posture. En quête d’une certaine harmonie, cette discipline vous donnera un sentiment de bien-être et permettra d’apaiser certaines douleurs telles que les douleurs de dos.',
-        description:
-          'Les « petits groupes en extérieur » sont des groupes constitués de 5 à 10 personnes maximum pour pratiquer le Pilates à petits prix et profiter du calme de la nature pour se ressourcer. Les créneaux en extérieur sont ouverts dès le début du printemps jusqu’à fin septembre. (Les cours en intérieur sont possibles toute l’année car nous ne sommes pas soumis aux aléas de la météo).',
-      },
-    ],
-    imgName: 'pilates.jpg',
-    imgAlt:
-      'Femme en tenue de sport assise sur un tabouret, en posture de relaxation, éclairage tamisé.',
-  },
-  {
-    activities: [
-      {
-        title: 'Stretching',
-        introduction:
-          'Je vous propose des cours individuels et des programmes personnalisés toute l’année ainsi que des cours collectifs en petits groupes en extérieur sur la période printemps-fin septembre.',
-        shortDescription: '',
-        description:
-          'Le stretching est une discipline qui nous invite à la relaxation. Très efficace pour apaiser et relâcher les tensions, elle permet d’évacuer le stress et de prendre un moment pour soi. Les étirements permettent également d’améliorer la posture et d’affiner la silhouette en allongeant les muscles. Vous pouvez intégrer le stretching à vos semaines d’entraînement si vous souhaitez améliorer votre mobilité, votre souplesse ou encore gagner en amplitude sur certains mouvements sportifs. La pratique du stretching est aussi très efficace pour booster votre récupération et faire le plein d’énergie.',
+          'En adoptant le stretching vous allez booster votre récupération et faire le plein d’énergie.',
       },
     ],
     imgName: 'stretching.jpg',
     imgAlt:
       'Personne effectuant un étirement et du stretching dans la neige, avec une vue sur des montagnes enneigées.',
+    hasImage: true,
+  },
+  {
+    activities: [
+      {
+        slug: 'renforcement-musculaire-doux',
+        title: 'Renforcement musculaire doux',
+        introduction:
+          'Je vous aide à retrouver ou à maintenir une activité sportive avec des séances de sport douces mais efficaces avec une méthode inspirée de la musculation, du Pilates et du stretching.',
+        description:
+          'Le but de ces séances est d’obtenir un corps fort et mobile. Vos muscles profonds seront activés, ce qui vous permettra notamment d’améliorer votre posture. En quête d’une certaine harmonie, cette activité vous donnera	un sentiment de bien-être et permettra d’apaiser certaines douleurs telles que les douleurs de dos.',
+      },
+    ],
+    imgName: 'pilates.jpg',
+    imgAlt:
+      'Femme en tenue de sport assise sur un tabouret, en posture de relaxation, éclairage tamisé.',
+    hasImage: true,
+  },
+  {
+    activities: [
+      {
+        slug: 'preparation-physique',
+        title: 'Préparation physique',
+        introduction:
+          'La préparation physique est indispensable pour performer dans n’importe quel sport pour développer les qualités physiques et éviter les blessures. Ensemble selon tes besoins on déterminera comment augmenter ton explosivité, ton endurance, ta force ou l’ensemble de ces qualités physique pour optimiser tes performances sportives.',
+        shortDescription:
+          'A titre informatif pour illustrer l’importance de la préparation physique, la course à pied  par exemple représente une contrainte importante pour le système musculaire et il est démontré que la préparation physique permet une prévention des blessures ainsi que de nombreuses adaptations notables comme une diminution des temps de contacts au sol, une amélioration de l’économie de course et globalement une amélioration de la performance. En ce qui concerne les pratiquants de sports de combat, la préparation physique permet d’obtenir un corps plus résistant, apte à encaisser les chocs. Elle est aussi la clé pour devenir fort, puissant, endurant, rapide… ',
+        description:
+          'Grâce à une bonne préparation physique, tu pourras éviter de nombreuses blessures. Des muscles résistants représentent une bonne prévention contre les déchirures et les claquages. Un bon gainage optimise la transmission des forces et protège le rachis. Des appuis renforcés et un bon équilibre protègent des traumatismes ligamentaires. Quel que soit le sport pratiqué, la préparation physique est très importante à mettre en place. N’hésite pas à me contacter pour qu’on discute ensemble de tes besoins.',
+        images: [
+          {
+            imgName: 'preparation-physique-1.jpg',
+            imgAlt:
+              'Personne en pleine séance de push-ups au sol dans une salle de sport, entourée de haltères, portant un short de boxe noir et doré et un débardeur noir.',
+          },
+          {
+            imgName: 'preparation-physique-2.jpg',
+            imgAlt:
+              'Personne en short de boxe noir et doré, faisant un exercice de corde ondulatoire, gantée de bandes de boxe, dans un ring de boxe.',
+          },
+          {
+            imgName: 'preparation-physique-3.jpg',
+            imgAlt:
+              'Personne debout sur un ring de boxe, en train de soulever deux haltères, vêtue d’un débardeur noir et d’un short de boxe noir et doré.',
+          },
+        ],
+      },
+      {
+        slug: 'musculation',
+        title: 'Musculation',
+        introduction:
+          'Au-delà de la performance sportive, il est fortement conseillé de faire de la musculation pour le bien-être général.',
+        description:
+          'La musculation est propice à l’épanouissement personnel et confère de nombreux bénéfices au corps en :',
+        items: [
+          'Diminuant le risque de maladies cardiovasculaires',
+          'Augmentant la solidité osseuse',
+          'Ralentissant les processus de vieillissement musculaire',
+          'Luttant contre certaines douleurs chroniques',
+          'Rééquilibrant la posture…',
+        ],
+        conclusion:
+          'Grâce à la sécrétion d’endorphines générées, la musculation permet aussi de libérer son esprit et de se sentir bien, elle est aussi une excellente méthode pour améliorer sa confiance en soi et se sentir bien dans sa peau.',
+      },
+    ],
+    imgName: 'musculation-cross-fit.jpg',
+    imgAlt: 'Haltères et poids de musculation sur un tapis de gym, en noir et blanc.',
+    hasImage: true,
   },
 ]
+
+// Mon histoire
+
+export const achievement = {
+  achievement_1: '7× Championne de France de Kick-Boxing',
+  achievement_2: 'Médaillée de Bronze des Championnats d’Europe Wako 2024',
+  achievement_3: 'Membre de l’équipe de France de Kick-Boxing',
+}

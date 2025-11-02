@@ -7,14 +7,18 @@ import { useEffect, useState } from 'react'
 import { Button } from '@headlessui/react'
 import siteMetadata from '@/data/siteMetadata'
 
-const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false)
+type Props = {
+  visible?: boolean
+}
+
+const Header = ({ visible }: Props) => {
+  const [isScrolled, setIsScrolled] = useState(visible)
 
   useEffect(() => {
     let ticking = false
 
     const handleScroll = () => {
-      if (!ticking) {
+      if (!ticking && !visible) {
         requestAnimationFrame(() => {
           setIsScrolled(window.scrollY > 0)
           ticking = false
@@ -56,10 +60,10 @@ const Header = () => {
           )}
         </div>
       </Link>
-      <h1 className={`text-xl md:text-2xl ${isScrolled ? 'block' : 'hidden'}`}>
+      <span className={`text-xl md:text-2xl ${isScrolled ? 'block' : 'hidden'}`}>
         <span className="font-bold">MÉLINA</span>
         <span className="font-light"> COACHING</span>
-      </h1>
+      </span>
       <div className="flex items-center leading-5 sm:space-x-6">
         <div className="no-scrollbar hidden items-center gap-x-4 overflow-x-auto">
           {' '}

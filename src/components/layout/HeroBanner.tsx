@@ -2,9 +2,11 @@ import siteMetadata from '@/data/siteMetadata'
 import { Button } from '@headlessui/react'
 import Link from 'next/link'
 
-const HeroBanner = () => {
+const HeroBanner = ({ fileName }) => {
   return (
-    <section className="relative -top-[104px] left-0 -mb-[104px] h-[75vh] w-full bg-[url('/static/images/hero_banner.jpg')] bg-cover bg-center bg-no-repeat object-center pt-[40vh] shadow-[inset_0px_0px_0px_1000px_rgba(0,0,0,0.2)] sm:bg-top">
+    <section
+      className={`relative -top-[104px] left-0 -mb-[104px] h-[75vh] w-full bg-[url('/static/images/hero_banner.jpg')] bg-cover bg-center bg-no-repeat object-center pt-[40vh] shadow-[inset_0px_0px_0px_1000px_rgba(0,0,0,0.2)] sm:bg-top`}
+    >
       <div className="-mt-6 flex h-full w-full flex-col items-center justify-end gap-5 px-4 text-center lg:gap-6">
         <span className="text-2xl font-thin tracking-tight text-white uppercase lg:text-3xl">
           Envoyez-moi un message

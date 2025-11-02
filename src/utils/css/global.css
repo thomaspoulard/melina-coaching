@@ -1,8 +1,16 @@
-h2 {
-  font-size: 48px;
+h1 {
+  font-size: 46px;
   font-weight: 700;
   font-variant: small-caps;
   margin-bottom: 24px;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: 700;
+  font-variant: small-caps;
+  margin-bottom: 16px;
 
   em {
     color: var(--color-primary);
@@ -12,7 +20,14 @@ h2 {
 
 h3 {
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 700;
+}
+
+ul {
+  h3 {
+    font-size: 24px;
+    font-weight: 300;
+  }
 }
 
 p {
@@ -30,6 +45,15 @@ p {
 
 /*********** Quote ***************/
 
+.parallelogram {
+  /* Only the top is bent, base is flat */
+  clip-path: polygon(25px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.z_shadow-primary:hover {
+  box-shadow: 0 0 0 3px var(--color-primary);
+}
+
 /*********************************/
 
 /* Extra small devices (phones, 600px and down) */
@@ -38,11 +62,19 @@ p {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  h2 {
-    font-size: 48px;
+  h1 {
+    font-size: 46px;
     font-weight: 700;
     font-variant: small-caps;
     margin-bottom: 24px;
+    line-height: 40px;
+  }
+
+  h2 {
+    font-size: 44px;
+    font-weight: 700;
+    font-variant: small-caps;
+    margin-bottom: 20px;
 
     em {
       color: var(--color-primary);
