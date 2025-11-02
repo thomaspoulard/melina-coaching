@@ -10,8 +10,6 @@ const LandscapeImagesGalery = ({ subDirectory, slug }: Props) => {
   const imgDirectoryName = '/static/images/' + subDirectory + '/' + slug + '/';
   const content = coachingActivities.find((e) => e.activities[0].slug === slug)
 
-  console.log(content);
-
   return (
     <section className="-mt-4 flex flex-col justify-center sm:-mt-0">
       <h2>Activités de groupe</h2>
