@@ -7,7 +7,7 @@ type Props = {
 }
 
 const LandscapeImagesGalery = ({ subDirectory, slug }: Props) => {
-  const imgDirectoryName = '/static/images/' + subDirectory + '/' + slug + '/';
+  const imgDirectoryName = "/static/images/" + subDirectory + "/" + slug + "/";
   const content = coachingActivities.find((e) => e.activities[0].slug === slug)
 
   return (
