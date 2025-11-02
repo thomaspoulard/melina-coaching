@@ -30,6 +30,15 @@ p {
 
 /*********** Quote ***************/
 
+.parallelogram {
+  /* Only the top is bent, base is flat */
+  clip-path: polygon(25px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.z_shadow-primary:hover {
+  box-shadow: 0 0 0 3px var(--color-primary);
+}
+
 /*********************************/
 
 /* Extra small devices (phones, 600px and down) */

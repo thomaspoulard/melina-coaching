@@ -34,7 +34,7 @@ export const introductionContent = {
         'Femme assise sur un tabouret en tenue de sport, profil dans une lumière douce sur fond sombre',
     },
     {
-      title: 'Transformations physiques',
+      title: 'Transformation physique',
       path: '/transformation-physique',
       imgName: 'transformation-physique.jpg',
       imgAlt:
