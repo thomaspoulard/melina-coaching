@@ -30,9 +30,6 @@ export const introductionContent = {
     },
   ],
   activities_all: 'Kick-Boxing - Préparation physique - Activités douces - Transformation physique',
-  achievement_1: '7× Championne de France de Kick-Boxing',
-  achievement_2: 'Médaillée de Bronze des Championnats d’Europe Wako 2024',
-  achievement_3: 'Membre de l’équipe de France de Kick-Boxing',
   achievement_images: [
     {
       imgName: 'combat_1',
@@ -157,3 +154,11 @@ export const coachingActivities: Array<ICoachingSection> = [
     imgAlt: 'Haltères et poids de musculation sur un tapis de gym, en noir et blanc.',
   },
 ]
+
+// Mon histoire
+
+export const achievement = {
+  achievement_1: '7× Championne de France de Kick-Boxing',
+  achievement_2: 'Médaillée de Bronze des Championnats d’Europe Wako 2024',
+  achievement_3: 'Membre de l’équipe de France de Kick-Boxing',
+}

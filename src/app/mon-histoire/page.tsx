@@ -1,4 +1,3 @@
-import MasonryLayout from '@/components/sections/MasonryLayout'
 import StorySection from '@/components/sections/StorySection'
 
 export default function Nutrition() {
