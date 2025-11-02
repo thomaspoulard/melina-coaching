@@ -15,18 +15,30 @@ export const introductionContent = {
     {
       title: 'Kick-Boxing',
       path: '/kick-boxing',
+      imgName: 'kick-boxing.jpg',
+      imgAlt:
+        'Sportive en gants de boxe levant un genou en garde de kick-boxing, éclairage coloré en studio',
     },
     {
       title: 'Préparation physique',
       path: '/preparation-physique',
+      imgName: 'preparation-physique.jpg',
+      imgAlt:
+        'Athlète faisant des pompes mains sur haltères dans une salle de sport, cadrage rapproché au sol',
     },
     {
       title: 'Activités douces',
       path: '/activites-douces',
+      imgName: 'activites-douces.jpg',
+      imgAlt:
+        'Femme assise sur un tabouret en tenue de sport, profil dans une lumière douce sur fond sombre',
     },
     {
       title: 'Transformations physiques',
       path: '/transformation-physique',
+      imgName: 'transformation-physique.jpg',
+      imgAlt:
+        'Boxeuse souriante en mouvement derrière une corde de ring, plan serré sur l’épaule et le buste',
     },
   ],
   activities_all: 'Kick-Boxing - Préparation physique - Activités douces - Transformation physique',
