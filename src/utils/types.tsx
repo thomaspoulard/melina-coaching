@@ -13,6 +13,8 @@ export interface ICoachingActivity {
   shortDescription?: string
   description: string
   images?: Array<INextImageElement>
+  items?: Array<string>
+  conclusion?: string
 }
 
 export interface ICoachingSection {

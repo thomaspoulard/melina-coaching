@@ -8,22 +8,22 @@ const StorySection = () => {
         className={`flex grid-cols-1 grid-rows-2 flex-col gap-4 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-16`}
       >
         <div className="row-start-1 flex flex-col justify-center text-justify sm:gap-2 md:items-start lg:col-start-2">
+
+          <ul>
+            <li>
+              <h3 className="leading-6">{achievement.achievement_1}</h3>
+            </li>
+            <li>
+              <h3 className="mt-4 leading-6 sm:mt-2">{achievement.achievement_2}</h3>
+            </li>
+            <li>
+              <h3 className="mt-4 mb-2 md:mb-6 leading-6 sm:mt-2">{achievement.achievement_3}</h3>
+            </li>
+          </ul>
+
           <h2>Mon histoire</h2>
 
           <div className="flex flex-col gap-4">
-
-            <ul>
-              <li>
-                <h3 className="leading-6">{achievement.achievement_1}</h3>
-              </li>
-              <li>
-                <h3 className="mt-4 leading-6 sm:mt-2">{achievement.achievement_2}</h3>
-              </li>
-              <li>
-                <h3 className="mt-4 mb-2 md:mb-6 leading-6 sm:mt-2">{achievement.achievement_3}</h3>
-              </li>
-            </ul>
-
             <p>
               Passionnée par le sport en tout genre, j’ai pratiqué de nombreuses années l’équitation
               avant de découvrir la boxe au début de mes années lycées. Ce fut un réel coup de cœur,

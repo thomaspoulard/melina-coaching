@@ -6,7 +6,6 @@ import Header from '@/components/layout/Header'
 import SectionContainer from '@/components/layout/SectionContainer'
 import Footer from '@/components/layout/Footer'
 import siteMetadata from 'src/utils/data/siteMetadata'
-import VideoHeroBanner from '@/components/layout/VideoHeroBanner'
 import { ThemeProviders } from '../theme-providers'
 import { Metadata } from 'next'
 

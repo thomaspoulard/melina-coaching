@@ -60,10 +60,10 @@ const Header = ({ visible }: Props) => {
           )}
         </div>
       </Link>
-      <h1 className={`text-xl md:text-2xl ${isScrolled ? 'block' : 'hidden'}`}>
+      <span className={`text-xl md:text-2xl ${isScrolled ? 'block' : 'hidden'}`}>
         <span className="font-bold">MÉLINA</span>
         <span className="font-light"> COACHING</span>
-      </h1>
+      </span>
       <div className="flex items-center leading-5 sm:space-x-6">
         <div className="no-scrollbar hidden items-center gap-x-4 overflow-x-auto">
           {' '}

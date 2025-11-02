@@ -7,9 +7,10 @@ interface IProps {
   isReversed?: boolean
   coachingSection: ICoachingSection | undefined
   hasImage?: boolean
+  hasBoldTitles?: boolean
 }
 
-const HomeCoachingCard: React.FC<IProps> = ({ isReversed = false, coachingSection, hasImage = true }) => {
+const HomeCoachingCard: React.FC<IProps> = ({ isReversed = false, coachingSection, hasImage = true, hasBoldTitles = false }) => {
   return (
     <div
       className={`flex flex-col gap-8 sm:items-center lg:gap-16 ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'}`}
@@ -20,17 +21,36 @@ const HomeCoachingCard: React.FC<IProps> = ({ isReversed = false, coachingSectio
             return (
               <div
                 key={i}
-                className="flex flex-col justify-center gap-4 text-justify md:items-start"
+                className="flex flex-col justify-center gap-3 sm:gap-8 text-justify md:items-start"
               >
-                <h3>{section.title}</h3>
+                {hasBoldTitles ?
+                  <h1>{section.title}</h1>
+                  :
+                  <h3>{section.title}</h3>
+                }
                 <p>{section.introduction}</p>
                 <div>
                   {section.shortDescription && <p className="mb-2">{section.shortDescription}</p>}
                   <p>{section.description}</p>
                 </div>
+                {
+                  section?.items &&
+                  <ul className='pl-5 list-disc font-light'>
+                    {
+                      section?.items?.map((el, i) => {
+                        return <li>{el}</li>
+                      })
+                    }
+                  </ul>
+                }
+                {
+                  section.conclusion && <p>{section.conclusion}</p>
+
+                }
               </div>
             )
-          })}
+          })
+        }
       </div>
       {
         hasImage && <img

@@ -184,9 +184,45 @@ export const coachingActivities: Array<ICoachingSection> = [
         slug: 'preparation-physique',
         title: 'Préparation physique',
         introduction:
-          'La préparation physique est indispensable pour performer dans n’importe quel sport pour développer les qualités physiques et éviter les blessures.',
+          'La préparation physique est indispensable pour performer dans n’importe quel sport pour développer les qualités physiques et éviter les blessures. Ensemble selon tes besoins on déterminera comment augmenter ton explosivité, ton endurance, ta force ou l’ensemble de ces qualités physique pour optimiser tes performances sportives.',
+        shortDescription:
+          'A titre informatif pour illustrer l’importance de la préparation physique, la course à pied  par exemple représente une contrainte importante pour le système musculaire et il est démontré que la préparation physique permet une prévention des blessures ainsi que de nombreuses adaptations notables comme une diminution des temps de contacts au sol, une amélioration de l’économie de course et globalement une amélioration de la performance. En ce qui concerne les pratiquants de sports de combat, la préparation physique permet d’obtenir un corps plus résistant, apte à encaisser les chocs. Elle est aussi la clé pour devenir fort, puissant, endurant, rapide… ',
+        description:
+          'Grâce à une bonne préparation physique, tu pourras éviter de nombreuses blessures. Des muscles résistants représentent une bonne prévention contre les déchirures et les claquages. Un bon gainage optimise la transmission des forces et protège le rachis. Des appuis renforcés et un bon équilibre protègent des traumatismes ligamentaires. Quel que soit le sport pratiqué, la préparation physique est très importante à mettre en place. N’hésite pas à me contacter pour qu’on discute ensemble de tes besoins.',
+        images: [
+          {
+            imgName: 'preparation-physique-1.jpg',
+            imgAlt:
+              'Personne en pleine séance de push-ups au sol dans une salle de sport, entourée de haltères, portant un short de boxe noir et doré et un débardeur noir.',
+          },
+          {
+            imgName: 'preparation-physique-2.jpg',
+            imgAlt:
+              'Personne en short de boxe noir et doré, faisant un exercice de corde ondulatoire, gantée de bandes de boxe, dans un ring de boxe.',
+          },
+          {
+            imgName: 'preparation-physique-3.jpg',
+            imgAlt:
+              'Personne debout sur un ring de boxe, en train de soulever deux haltères, vêtue d’un débardeur noir et d’un short de boxe noir et doré.',
+          },
+        ],
+      },
+      {
+        slug: 'musculation',
+        title: 'Musculation',
+        introduction:
+          'Au-delà de la performance sportive, il est fortement conseillé de faire de la musculation pour le bien-être général.',
         description:
           'Ensemble selon tes besoins on déterminera comment augmenter ton explosivité, ta vitesse, ton endurance, ta force ou l’ensemble de ces qualités physique pour optimiser tes performances sportives.',
+        items: [
+          'Diminuant le risque de maladies cardiovasculaires',
+          'Augmentant la solidité osseuse',
+          'Ralentissant les processus de vieillissement musculaire',
+          'Luttant contre certaines douleurs chroniques',
+          'Rééquilibrant la posture…',
+        ],
+        conclusion:
+          'Grâce à la sécrétion d’endorphines générées, la musculation permet aussi de libérer son esprit et de se sentir bien, elle est aussi une excellente méthode pour améliorer sa confiance en soi et se sentir bien dans sa peau.',
       },
     ],
     imgName: 'musculation-cross-fit.jpg',
