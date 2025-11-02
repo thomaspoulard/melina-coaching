@@ -7,9 +7,9 @@ const StorySection = () => {
       <div
         className={`flex grid-cols-1 grid-rows-2 flex-col gap-4 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-16`}
       >
-        <div className="row-start-1 flex flex-col justify-center text-justify sm:gap-2 md:items-start lg:col-start-2">
+        <div className="row-start-1 flex flex-col text-justify sm:gap-2 md:items-start lg:col-start-2">
 
-          <ul>
+          <ul className='text-primary'>
             <li>
               <h3 className="leading-6">{achievement.achievement_1}</h3>
             </li>

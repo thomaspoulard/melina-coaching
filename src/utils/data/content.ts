@@ -213,7 +213,7 @@ export const coachingActivities: Array<ICoachingSection> = [
         introduction:
           'Au-delà de la performance sportive, il est fortement conseillé de faire de la musculation pour le bien-être général.',
         description:
-          'Ensemble selon tes besoins on déterminera comment augmenter ton explosivité, ta vitesse, ton endurance, ta force ou l’ensemble de ces qualités physique pour optimiser tes performances sportives.',
+          'La musculation est propice à l’épanouissement personnel et confère de nombreux bénéfices au corps en :',
         items: [
           'Diminuant le risque de maladies cardiovasculaires',
           'Augmentant la solidité osseuse',
