@@ -39,18 +39,6 @@ const IntroductionSection: React.FC = () => {
         <h2 className="text-primary hidden sm:block">{introductionContent.activities_all}</h2>
       </div>
 
-      <ul>
-        <li>
-          <h3 className="leading-6">{introductionContent.achievement_1}</h3>
-        </li>
-        <li>
-          <h3 className="mt-4 leading-6 sm:mt-2">{introductionContent.achievement_2}</h3>
-        </li>
-        <li>
-          <h3 className="mt-4 mb-6 leading-6 sm:mt-2">{introductionContent.achievement_3}</h3>
-        </li>
-      </ul>
-
       <div className="flex flex-col gap-2 text-justify">
         <p>
           Mon parcours en compétition m’a permis de développer mon mental en apprenant à repousser

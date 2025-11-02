@@ -6,11 +6,12 @@ type Props = {
   activity: string
   classNames?: string
   i?: number
+  hasImage?: boolean
 }
 
-const ActivitySection = ({ activity, classNames, i }: Props) => {
+const ActivitySection = ({ activity, classNames, i, hasImage = true }: Props) => {
   const matchedActivity: ICoachingSection | undefined = coachingActivities.find(
-    (e) => e.activities[0].key === activity
+    (e) => e.activities[0].slug === activity
   )
 
   return (
@@ -19,6 +20,7 @@ const ActivitySection = ({ activity, classNames, i }: Props) => {
         <HomeCoachingCard
           isReversed={!!(i ? i % 2 === 0 : true)}
           coachingSection={matchedActivity}
+          hasImage={hasImage}
         />
       </div>
     </section>
