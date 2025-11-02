@@ -35,7 +35,7 @@ export const introductionContent = {
     },
     {
       title: 'Transformation physique',
-      path: '/transformation-physique',
+      path: /*'/transformation-physique'*/ '#', //TODO: disabled page "transformation-physique"
       imgName: 'transformation-physique.jpg',
       imgAlt:
         'Boxeuse souriante en mouvement derrière une corde de ring, plan serré sur l’épaule et le buste',

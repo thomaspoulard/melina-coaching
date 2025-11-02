@@ -31,7 +31,7 @@ const helveticaNeue = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
-    default: siteMetadata.title,
+    default: 'Préparation physique',
     template: `%s | ${siteMetadata.title}`,
   },
   description: siteMetadata.description,

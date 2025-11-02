@@ -1,6 +1,4 @@
-'use client'
 import { introductionContent } from '@/data/content'
-import { useRouter } from 'next/navigation'
 import ArrowOutwardSharpIcon from '@mui/icons-material/ArrowOutwardSharp';
 
 import ImageCard from '../ImageCard';
@@ -8,7 +6,6 @@ import ImageCard from '../ImageCard';
 const HomepageCardsSection = () => {
   const imgDirectoryName = "/static/images/coaching/homepage/";
   const activities = introductionContent.activities;
-  const router = useRouter()
 
   return (
     <section className="-mt-4 flex flex-col justify-center gap-8 sm:-mt-0 lg:gap-20">
@@ -20,7 +17,7 @@ const HomepageCardsSection = () => {
         }
       >
         {introductionContent.activities.map((activity, i) => {
-          return <button key={i} onClick={() => router.push(activity.path)} className="h-full cursor-pointer z_shadow-primary group">
+          return <a key={i} href={activity.path} className="h-full cursor-pointer z_shadow-primary group">
             <div className="relative h-full">
               <ImageCard src={imgDirectoryName + activity.imgName} alt={activity.imgAlt} />
               <ArrowOutwardSharpIcon className="text-white group-hover:text-primary absolute right-3 top-3" />
@@ -28,7 +25,7 @@ const HomepageCardsSection = () => {
                 <span>{activity.title}</span>
               </div>
             </div>
-          </button>
+          </a>
         })
         }
       </div >
