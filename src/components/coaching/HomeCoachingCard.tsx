@@ -6,7 +6,7 @@ import { ICoachingSection } from 'src/utils/types'
 interface IProps {
   isReversed?: boolean
   coachingSection: ICoachingSection | undefined
-  hasImage: boolean
+  hasImage?: boolean
 }
 
 const HomeCoachingCard: React.FC<IProps> = ({ isReversed = false, coachingSection, hasImage = true }) => {

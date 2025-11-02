@@ -18,6 +18,6 @@ export interface ICoachingActivity {
 export interface ICoachingSection {
   imgName: string
   imgAlt: string
-  hasImage: boolean,
+  hasImage?: boolean,
   activities: Array<ICoachingActivity>
 }

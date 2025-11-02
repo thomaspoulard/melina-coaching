@@ -6,10 +6,10 @@ type Props = {
   activity: string
   classNames?: string
   i?: number
-  hasImage: boolean
+  hasImage?: boolean
 }
 
-const ActivitySection = ({ activity, classNames, i, hasImage }: Props) => {
+const ActivitySection = ({ activity, classNames, i, hasImage = true }: Props) => {
   const matchedActivity: ICoachingSection | undefined = coachingActivities.find(
     (e) => e.activities[0].slug === activity
   )
