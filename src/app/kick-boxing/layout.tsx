@@ -99,7 +99,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="text-black-950 bg-white antialiased">
         <ThemeProviders>
           <Header />
-          <VideoHeroBanner remoteFileUrl="https://ri0bt5s1ncgotyco.public.blob.vercel-storage.com/kick-boxing.mp4" />
+          <VideoHeroBanner /*remoteFileUrl="https://ri0bt5s1ncgotyco.public.blob.vercel-storage.com/kick-boxing.mp4"*/ filename="kick-boxing.mp4" />
           <SectionContainer>
             <main className="mb-auto">{children}</main>
           </SectionContainer>
