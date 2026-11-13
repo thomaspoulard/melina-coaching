@@ -46,10 +46,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   alternates: {
-    canonical: './',
-    types: {
-      'application/rss+xml': `${siteMetadata.siteUrl}/feed.xml`,
-    },
+    canonical: './'
   },
   robots: {
     index: true,
@@ -95,7 +92,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <link rel="icon" type="image/png" href={`${basePath}/static/favicons/logo.svg`} />
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
-      <link rel="alternate" type="application/rss+xml" href={`${basePath}/feed.xml`} />
       <body className="text-black-950 bg-white antialiased">
         <ThemeProviders>
           <Header />
