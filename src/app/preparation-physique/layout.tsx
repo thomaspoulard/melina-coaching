@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   alternates: {
-    canonical: './'
+    canonical: './',
   },
   robots: {
     index: true,
