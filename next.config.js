@@ -66,9 +66,11 @@ module.exports = () => {
     basePath,
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+    /*
     eslint: {
       dirs: ['src/app', 'src/app/components', 'src/app/layouts'],
     },
+    */
     images: {
       remotePatterns: [
         {
